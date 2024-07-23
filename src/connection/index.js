@@ -1,6 +1,6 @@
 import { createWeb3Modal, defaultConfig } from "@web3modal/ethers/react";
 
-export const SUPPORTED_CHAIN = 84532;
+export const SUPPORTED_CHAIN = 1115;
 
 // const sepolia = {
 //   chainId: 11155420,
@@ -9,21 +9,14 @@ export const SUPPORTED_CHAIN = 84532;
 //   explorerUrl: 'https://etherscan.io',
 //   rpcUrl: import.meta.env.VITE_INFURA_RPC
 // }
-const basesepolia = {
-  chainId: 84532,
-  name: "Base Sepolia",
-  currency: "ETH",
-  explorerUrl: "https://sepolia-explorer.base.org",
+const coretestnet = {
+  chainId: 1115,
+  name: "CORE Blockchain",
+  currency: "TCORE",
+  explorerUrl: "https://scan.test.btcs.network/",
   rpcUrl: import.meta.env.VITE_INFURA_RPC,
 };
 
-const basemainnet = {
-  chainId: 8453,
-  name: "Base mainnet",
-  currency: "ETH",
-  explorerUrl: "https://basescan.org/",
-  rpcUrl: import.meta.env.VITE_INFURA_RPC,
-};
 
 const metadata = {
   name: "My Website",
@@ -35,13 +28,13 @@ const metadata = {
 export const configWeb3Modal = () =>
   createWeb3Modal({
     ethersConfig: defaultConfig({ metadata }),
-    chains: [basemainnet, basesepolia],
+    chains: [coretestnet],
     projectId: import.meta.env.VITE_PROJECT_ID,
     enableEIP6963: true, // true by default
     enableInjected: true, // true by default
     enableCoinbase: true, // true by default
     rpcUrl: import.meta.env.VITE_COINBASE_RPC, // used for the Coinbase SDK
-    defaultChainId: 84532, // used for the Coinbase SDK
+    defaultChainId: 1115, // used for the Coinbase SDK
     enableAnalytics: false,
     themeVariables: {
       "--w3m-accent": "#E0BB83",

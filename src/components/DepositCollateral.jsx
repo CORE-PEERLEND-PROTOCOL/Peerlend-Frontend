@@ -18,7 +18,7 @@ import Modal from "@mui/material/Modal";
 // import InputLabel from "@mui/material/InputLabel";
 // import MenuItem from "@mui/material/MenuItem";
 import { ethers } from "ethers";
-// import TokenList from "../constants/tokenList";
+import TokenList from "../constants/tokenList";
 import { TokenSelectDropdown } from '@coinbase/onchainkit/token';
 import { tokens } from "../constants/OnchainTokenList";
 
@@ -57,7 +57,7 @@ const DepositCollateral = () => {
     try {
       const approveTx = await erc20contract.approve(
         import.meta.env.VITE_CONTRACT_ADDRESS,
-        ethers.parseUnits(depositAmount, 18)
+        ethers.parseUnits(depositAmount, TokenList[tokenAdd]?.decimals)
       );
       const approveReceipt = await approveTx.wait();
 
@@ -74,7 +74,7 @@ const DepositCollateral = () => {
 
       const transaction = await contract.depositCollateral(
         tokenAdd,
-        ethers.parseUnits(depositAmount, 18)
+        ethers.parseUnits(depositAmount, TokenList[tokenAdd]?.decimals)
       );
       console.log("transaction: ", transaction);
       const receipt = await transaction.wait();
@@ -121,7 +121,7 @@ const DepositCollateral = () => {
       >
         <Box sx={style}>
           <p className='lg:text-[20px] md:text-[20px] text-[18px] my-6 text-[#E0BB83] font-playfair font-bold'>Deposit collateral</p>
-            <TokenSelectDropdown sx={{ backgroundColor: "#ffffff23", outline: "none", color: "gray", marginBottom: "20px" }} token={selectTokenAdd} setToken={handleTokenChange} options={tokens}/>
+          <TokenSelectDropdown sx={{ backgroundColor: "#ffffff23", outline: "none", color: "gray", marginBottom: "20px" }} token={selectTokenAdd} setToken={handleTokenChange} options={tokens} />
           <FormControl fullWidth>
             {/* <InputLabel id="demo-simple-select-label" sx={{ color: "white" }}>Token Address</InputLabel> */}
             {/* <Select

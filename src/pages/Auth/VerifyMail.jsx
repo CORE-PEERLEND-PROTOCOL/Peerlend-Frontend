@@ -1,7 +1,5 @@
-import { useCallback, useEffect, useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import WalletConnected from "../../utility/WalletConnected";
-import { LuLogIn } from "react-icons/lu";
 import { useWalletInfo, useWeb3Modal, useWeb3ModalAccount, useWeb3ModalProvider } from "@web3modal/ethers/react";
 import { useCheckIsVerified } from "../../Hooks/useCheckIsVerified";
 import { toast } from 'react-toastify'
@@ -54,7 +52,7 @@ const VerifyMail = () => {
         const toastId = toast.loading('Sending OTP...', { autoClose: false, position: 'top-center' });
 
         try {
-            const res = await axios.post('https://email-service-backend-1.onrender.com/api/v1/sendOtp', { email }, { headers });
+            const res = await axios.post(`${import.meta.env.VITE_EMAIL_SERVICE}/api/v1/sendOtp`, { email }, { headers });
 
             if (res.status === 201) {
                 toast.update(toastId, { render: 'OTP sent successfully.', type: 'success', position: 'top-center', autoClose: 5000, isLoading: false });
@@ -84,7 +82,7 @@ const VerifyMail = () => {
 
         try {
             // Replace this URL with the actual verification endpoint
-            const res = await axios.post('https://email-service-backend-1.onrender.com/api/v1/verifyMail', { email, otp: otpCode }, { headers });
+            const res = await axios.post(`${import.meta.env.VITE_EMAIL_SERVICE}/api/v1/verifyMail`, { email, otp: otpCode }, { headers });
 
 
             if (res.status === 200) {

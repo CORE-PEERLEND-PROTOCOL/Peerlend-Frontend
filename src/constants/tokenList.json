@@ -5,16 +5,16 @@
         "decimals": 18,
         "address": "0xE4aB69C077896252FAFBD49EFD26B5D171A32410"
     },
-    "0x4B7e00f107CcB2ae3982DaE5692238eB6B811959": {
+    "0xEFB354B7d482FB0b7fD01e4bDDAE61CBFb7b7Bb5": {
         "name": "$PEER",
         "symbol": "PEER",
         "decimals": 18,
-        "address": "0x4B7e00f107CcB2ae3982DaE5692238eB6B811959"
+        "address": "0xEFB354B7d482FB0b7fD01e4bDDAE61CBFb7b7Bb5"
     },
-    "0x87350147a24099Bf1e7E677576f01C1415857C75": {
-        "name": "USDC",
-        "symbol": "USDC",
+    "0x3786495f5d8a83b7bacd78e2a0c61ca20722cce3": {
+        "name": "USDT",
+        "symbol": "USDT",
         "decimals": 6,
-        "address": "0x87350147a24099Bf1e7E677576f01C1415857C75"
+        "address": "0x3786495f5d8a83b7bacd78e2a0c61ca20722cce3"
     }
 }
