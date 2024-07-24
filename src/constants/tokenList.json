@@ -5,11 +5,11 @@
         "decimals": 18,
         "address": "0xE4aB69C077896252FAFBD49EFD26B5D171A32410"
     },
-    "0xEFB354B7d482FB0b7fD01e4bDDAE61CBFb7b7Bb5": {
+    "0x8e12a958a0097a039E2969F1bA22a0d828f4A37c": {
         "name": "$PEER",
         "symbol": "PEER",
         "decimals": 18,
-        "address": "0xEFB354B7d482FB0b7fD01e4bDDAE61CBFb7b7Bb5"
+        "address": "0x8e12a958a0097a039E2969F1bA22a0d828f4A37c"
     },
     "0x3786495f5d8a83b7bacd78e2a0c61ca20722cce3": {
         "name": "USDT",

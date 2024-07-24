@@ -111,7 +111,7 @@ const CreateRequest = () => {
             <input type="text" placeholder='Amount' className="rounded-lg w-[100%] p-4 bg-[#ffffff23] backdrop-blur-lg mb-4 outline-none" onChange={(e) => setAmount(e.target.value)} />
             <input type="text" placeholder='Interest' className="rounded-lg w-[100%] p-4 bg-[#ffffff23] backdrop-blur-lg mb-4 outline-none" onChange={(e) => setInterest(e.target.value)} />
             <input type="Date" placeholder='Return date' className="rounded-lg w-[100%] p-4 bg-[#ffffff23] backdrop-blur-lg mb-4 outline-none" onChange={(e) => setReturnDate(e.target.value)} />
-              <TokenSelectDropdown sx={{ backgroundColor: "#ffffff23", outline: "none", color: "gray", marginBottom: "20px" }} token={selectLoanCurrency} setToken={handleTokenChange} options={tokens}/>
+            <TokenSelectDropdown sx={{ backgroundColor: "#ffffff23", outline: "none", color: "gray", marginBottom: "20px" }} token={selectLoanCurrency} setToken={handleTokenChange} options={tokens} />
             <FormControl fullWidth>
               {/* <InputLabel id="demo-simple-select-label" sx={{ color: "white" }}>Loan Currency</InputLabel>
               <Select

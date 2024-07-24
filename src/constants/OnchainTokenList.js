@@ -10,7 +10,7 @@ export const tokens = [
   },
   {
     name: "$PEER",
-    address: "0xEFB354B7d482FB0b7fD01e4bDDAE61CBFb7b7Bb5",
+    address: "0x8e12a958a0097a039E2969F1bA22a0d828f4A37c",
     symbol: "PEER",
     decimals: 18,
     image: "/src/assets/logo.svg",

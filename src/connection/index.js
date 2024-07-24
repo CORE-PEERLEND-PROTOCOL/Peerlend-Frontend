@@ -13,7 +13,7 @@ const coretestnet = {
   chainId: 1115,
   name: "CORE Blockchain",
   currency: "TCORE",
-  explorerUrl: "https://scan.test.btcs.network/",
+  explorerUrl: "https://scan.test.btcs.network",
   rpcUrl: import.meta.env.VITE_INFURA_RPC,
 };
 

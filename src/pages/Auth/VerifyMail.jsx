@@ -97,7 +97,7 @@ const VerifyMail = () => {
 
             console.log(res); // Log the response from the backend (if any
 
-            if (updateRes.status === 200) {
+            if (res.status === 200) {
                 setError('User verified successfully.');
                 toast.update(toastId, { render: 'User verified successfully.', type: 'success', position: 'top-center', autoClose: 5000, isLoading: false });
                 navigate('/dashboard');

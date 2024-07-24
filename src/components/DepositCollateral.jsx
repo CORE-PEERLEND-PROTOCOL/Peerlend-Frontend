@@ -54,6 +54,8 @@ const DepositCollateral = () => {
     const contract = getProtocolContract(signer);
     const erc20contract = getErc20TokenContract(signer, tokenAdd);
 
+    console.log(contract.interface.parseError("0x473bd132"))
+
     try {
       const approveTx = await erc20contract.approve(
         import.meta.env.VITE_CONTRACT_ADDRESS,
