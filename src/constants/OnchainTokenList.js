@@ -10,7 +10,7 @@ export const tokens = [
   },
   {
     name: "$PEER",
-    address: "0x8e12a958a0097a039E2969F1bA22a0d828f4A37c",
+    address: "0xA000EBb1395b34369F60e31986fF7432529016D0",
     symbol: "PEER",
     decimals: 18,
     image: "/src/assets/logo.svg",
@@ -18,10 +18,26 @@ export const tokens = [
   },
   {
     name: "LINK",
-    address: "0xE4aB69C077896252FAFBD49EFD26B5D171A32410",
+    address: "0x1Fb9EEe6DF9cf79968D2b558AeDE454384498e2a",
     symbol: "LINK",
     decimals: 18,
     image: "/src/assets/LINK.png",
-    chainId: 84532,
+    chainId: 1115,
+  },
+  {
+    name: "WBTC",
+    address: "0x45d341D33624Cc53B1E61f73C076f8A545DA191D",
+    symbol: "WBTC",
+    decimals: 18,
+    image: "https://cryptologos.cc/logos/wrapped-bitcoin-wbtc-logo.svg?v=032",
+    chainId: 1115,
+  },
+  {
+    name: "DAI",
+    address: "0x57a8f8b6eD04e92f053C19EFbF1ab8C0314Fe7b0",
+    symbol: "DAI",
+    decimals: 18,
+    image: "https://cryptologos.cc/logos/multi-collateral-dai-dai-logo.svg?v=032",
+    chainId: 1115,
   },
 ];

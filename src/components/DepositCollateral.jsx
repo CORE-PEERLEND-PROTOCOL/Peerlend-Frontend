@@ -100,6 +100,7 @@ const DepositCollateral = () => {
     } finally {
       setDepositAmount(0);
       setTokenAdd("");
+      handleClose()
     }
   }
 

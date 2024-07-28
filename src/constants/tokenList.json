@@ -1,20 +1,32 @@
 {
-    "0xE4aB69C077896252FAFBD49EFD26B5D171A32410": {
+    "0x1Fb9EEe6DF9cf79968D2b558AeDE454384498e2a": {
         "name": "LINK",
         "symbol": "LINK",
         "decimals": 18,
-        "address": "0xE4aB69C077896252FAFBD49EFD26B5D171A32410"
+        "address": "0x1Fb9EEe6DF9cf79968D2b558AeDE454384498e2a"
     },
-    "0x8e12a958a0097a039E2969F1bA22a0d828f4A37c": {
+    "0xA000EBb1395b34369F60e31986fF7432529016D0": {
         "name": "$PEER",
         "symbol": "PEER",
         "decimals": 18,
-        "address": "0x8e12a958a0097a039E2969F1bA22a0d828f4A37c"
+        "address": "0xA000EBb1395b34369F60e31986fF7432529016D0"
     },
     "0x3786495f5d8a83b7bacd78e2a0c61ca20722cce3": {
         "name": "USDT",
         "symbol": "USDT",
         "decimals": 6,
         "address": "0x3786495f5d8a83b7bacd78e2a0c61ca20722cce3"
+    },
+    "0x45d341D33624Cc53B1E61f73C076f8A545DA191D": {
+        "name": "WBTC",
+        "symbol": "WBTC",
+        "decimals": 18,
+        "address": "0x45d341D33624Cc53B1E61f73C076f8A545DA191D"
+    },
+    "0x57a8f8b6eD04e92f053C19EFbF1ab8C0314Fe7b0": {
+        "name": "DAI",
+        "symbol": "DAI",
+        "decimals": 18,
+        "address": "0x57a8f8b6eD04e92f053C19EFbF1ab8C0314Fe7b0"
     }
 }
