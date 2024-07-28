@@ -113,7 +113,6 @@ const VerifyMail = () => {
             setError('');
             setOtpCode('');
             setEmail('');
-            handleClose();
         }
     };
 

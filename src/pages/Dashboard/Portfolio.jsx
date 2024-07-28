@@ -24,6 +24,8 @@ const Portfolio = () => {
 
   const userRequests = allRequests.filter(request => request?.address === address);
 
+  console.log(userRequests);
+
   return (
     <main>
       <div className='flex justify-between items-center mb-6'>
@@ -88,19 +90,17 @@ const Portfolio = () => {
                 <h2 className='text-[18px] lg:text-[24px] md:text-[24px] mb-4'>No request yet!</h2>
               </div>
             ) : (userRequests.map((data, index) => {
-              if (data?.address == address) {
-                return (
-                  <div key={index} className="w-[100%] lg:w-[31%] md:w-[31%] rounded-lg border border-bg-ash/35 bg-bg-gray p-4 mt-6">
-                    <Link to={`/dashboard/portfolio/${data?.id}`}>
-                      <img src={requestImage} alt="" className="w-[100%] rounded-lg h-[200px] object-cover object-center mb-4" />
-                      <p>Amount: {formatUnits(data?.amount, tokenList[data?.loanReq]?.decimals)}</p>
-                      <p>Rate: {data?.interest.toString()}<span>&#37;</span></p>
-                      <p>Repayment: {formatUnits(data?.repayment, tokenList[data?.loanReq]?.decimals + 1)}</p>
-                      <p>Return date: <span>{(new Date(Number(data?.rDate) * 1000)).toLocaleString()}</span></p>
-                    </Link>
-                  </div>
-                )
-              }
+              return (
+                <div key={index} className="w-[100%] lg:w-[31%] md:w-[31%] rounded-lg border border-bg-ash/35 bg-bg-gray p-4 mt-6">
+                  <Link to={`/dashboard/portfolio/${data?.id}`}>
+                    <img src={requestImage} alt="" className="w-[100%] rounded-lg h-[200px] object-cover object-center mb-4" />
+                    <p>Amount: {formatUnits(data?.amount, tokenList[data?.loanReq]?.decimals)}</p>
+                    <p>Rate: {data?.interest.toString()}<span>&#37;</span></p>
+                    <p>Repayment: {formatUnits(data?.repayment, tokenList[data?.loanReq]?.decimals + 1)}</p>
+                    <p>Return date: <span>{(new Date(Number(data?.rDate) * 1000)).toLocaleString()}</span></p>
+                  </Link>
+                </div>
+              )
             }
             ))}
         </div>

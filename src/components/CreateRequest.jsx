@@ -59,9 +59,9 @@ const CreateRequest = () => {
 
     try {
       const _returnDate = new Date(returnDate).getTime() / 1000;
-      const _amount = ethers.parseUnits(amount, TokenList[loanCurrency]?.decimals);
+      // const _amount = ethers.parseUnits(amount, TokenList[loanCurrency]?.decimals);
 
-      const transaction = await contract.createLendingRequest(_amount, interest, _returnDate, loanCurrency);
+      const transaction = await contract.createLendingRequest(amount, interest, _returnDate, loanCurrency);
       console.log("transaction: ", transaction);
       const receipt = await transaction.wait();
 

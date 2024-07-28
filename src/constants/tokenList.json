@@ -11,11 +11,11 @@
         "decimals": 18,
         "address": "0xA000EBb1395b34369F60e31986fF7432529016D0"
     },
-    "0x3786495f5d8a83b7bacd78e2a0c61ca20722cce3": {
+    "0x3786495F5d8a83B7bacD78E2A0c61ca20722Cce3": {
         "name": "USDT",
         "symbol": "USDT",
         "decimals": 6,
-        "address": "0x3786495f5d8a83b7bacd78e2a0c61ca20722cce3"
+        "address": "0x3786495F5d8a83B7bacD78E2A0c61ca20722Cce3"
     },
     "0x45d341D33624Cc53B1E61f73C076f8A545DA191D": {
         "name": "WBTC",

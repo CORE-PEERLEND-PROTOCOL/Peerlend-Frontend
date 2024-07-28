@@ -13,30 +13,31 @@ const UseFetchRequests = () => {
         try {
             const contract = getProtocolContract(readOnlyProvider);
             const res = await contract.getAllRequest();
-            const converted = res?.map((item)=>{
-                return{id: item[0],
-                address: item[1],
-                amount: item[2],
-                interest: item[3],
-                repayment: item[4],
-                Offer: item[5]?.map((ite)=>{
-                    return{
-                        offerId: ite[0],
-                        tokenAdd: ite[1],
-                        author: ite[2],
-                        loanAmount: ite[3],
-                        loanInt: ite[4],
-                        rDate: ite[5],
-                        offerStat: ite[6]
-                    }
-                }),
-                rDate: item[6],
-                lender: item[7],
-                loanReq: item[8],
-                loanStatus: item[9]
-    
-               }
-            }) 
+            const converted = res?.map((item) => {
+                return {
+                    id: item[0],
+                    address: item[1],
+                    amount: item[2],
+                    interest: item[3],
+                    repayment: item[4],
+                    Offer: item[5]?.map((ite) => {
+                        return {
+                            offerId: ite[0],
+                            tokenAdd: ite[1],
+                            author: ite[2],
+                            loanAmount: ite[3],
+                            loanInt: ite[4],
+                            rDate: ite[5],
+                            offerStat: ite[6]
+                        }
+                    }),
+                    rDate: item[6],
+                    lender: item[7],
+                    loanReq: item[8],
+                    loanStatus: item[9]
+
+                }
+            })
             setAllRequests(converted)
         } catch (error) {
             console.error(error);

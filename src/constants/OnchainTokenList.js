@@ -1,7 +1,7 @@
 export const tokens = [
   {
     name: "USDT",
-    address: "0x3786495f5d8a83b7bacd78e2a0c61ca20722cce3",
+    address: "0x3786495F5d8a83B7bacD78E2A0c61ca20722Cce3",
     symbol: "USDT",
     decimals: 6,
     image:
